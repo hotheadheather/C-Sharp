@@ -1,0 +1,52 @@
+Baker Shirley
+Gardner Evelyn
+Gotlander Ellen
+Gaspers Alice
+Haley Helen
+Hinson Dottie
+Hinson Kit
+Hooch Marla
+Horn Betty
+Marshall Penny
+Mordabito Mae
+Murphy Doris
+
+       
+
+
+   public static double BatInfo()
+        {
+            bats = 0;
+            double convertBats;
+            int batCounter = 0;
+            Boolean inValid = true;
+
+            while (inValid)
+            {
+                Console.Write("Choose how many bats the player had :");
+
+                try
+                {
+                    bats = int.Parse(Console.ReadLine());
+                    convertBats = Convert.ToDouble(bats);
+                }
+                catch (Exception e)
+                {
+                    Console.Write("Please enter a whole number :");
+                }
+
+                if (bats < 1)
+                {
+                    inValid = false;
+                }
+
+                if (inValid)
+
+                    statData[playerId - 1, 0] = bats; // stop using 0 here and use playerID
+                    statData[playerId - 1, 1] = hits;
+                    statData[playerId - 1, 2] = avg2;
+            }
+            batCounter++;
+            return bats;
+        }
+

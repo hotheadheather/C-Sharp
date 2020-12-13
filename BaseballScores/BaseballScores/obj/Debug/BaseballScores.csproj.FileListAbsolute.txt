@@ -1,0 +1,7 @@
+C:\C#\BaseballScores\BaseballScores\bin\Debug\BaseballScores.exe.config
+C:\C#\BaseballScores\BaseballScores\bin\Debug\BaseballScores.exe
+C:\C#\BaseballScores\BaseballScores\bin\Debug\BaseballScores.pdb
+C:\C#\BaseballScores\BaseballScores\obj\Debug\BaseballScores.csprojAssemblyReference.cache
+C:\C#\BaseballScores\BaseballScores\obj\Debug\BaseballScores.csproj.CoreCompileInputs.cache
+C:\C#\BaseballScores\BaseballScores\obj\Debug\BaseballScores.exe
+C:\C#\BaseballScores\BaseballScores\obj\Debug\BaseballScores.pdb
