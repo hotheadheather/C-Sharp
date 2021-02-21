@@ -1,0 +1,14 @@
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.csproj.CoreCompileInputs.cache
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.exe.config
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.exe
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.pdb
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.exe
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.pdb
+C:\C#\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.csprojAssemblyReference.cache
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.exe.config
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.exe
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\bin\Debug\HaroldsHomeServ.pdb
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.csprojAssemblyReference.cache
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.csproj.CoreCompileInputs.cache
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.exe
+C:\Users\hkwhi\OneDrive\Desktop\HaroldsHomeServ\HaroldsHomeServ\obj\Debug\HaroldsHomeServ.pdb

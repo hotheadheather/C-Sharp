@@ -1,0 +1,230 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HaroldsHomeServ
+{
+
+
+    class TestJobs {
+
+
+        static string[] landscapingArray = new string[5];
+
+       
+
+
+    static Job profile1;
+    static Job profile2;
+    static Job profile3;
+    static Job profile4;
+    static Job profile5;
+
+
+        public static void Main(String[] args)
+
+        {
+
+            for (int x = 0; x < landscapingArray.Length; x++)
+                landscapingArray[x] = new Job();
+
+
+
+            profile1 = new Job();                    // this uses the default constructor
+
+            profile2 = new Job(2, 17.50, "garden"); // this uses an overloaded/parameterized constructor
+
+            profile3 = new Job(3.5, 15.00, "mow");
+
+            profile4 = new Job(1, 25.00, "flowers");
+
+            profile5 = new Job(1.7, 30.00, "bricklaying");
+
+            //^^^these represent objects for lawnscaping duties
+
+            Console.WriteLine(profile1.ToString());
+            Console.WriteLine(profile2.ToString());
+            Console.WriteLine(profile3.ToString());
+            Console.WriteLine(profile4.ToString());
+            Console.WriteLine(profile5.ToString());
+
+            Console.ReadLine();
+
+            //formatting method toString()
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Schema;
+using static System.Console;
+
+
+// this is an instantiable class
+namespace HaroldsHomeServ
+{
+    class Job : IComparable 
+    {
+        // instance variables
+        private string jobDesc;
+        private double hours;
+        private double hourlyRate;
+
+        public string JobDesc
+        {
+            get => jobDesc;
+
+            set
+            {
+                if (value.Trim().Length > 0)
+                {
+                    jobDesc = value;
+                }
+                else
+                {
+                    jobDesc = "mow yard";
+                }
+            }
+        }
+
+
+        public double Hours
+        {
+            get => hours;
+
+            set
+            {
+                if (value > 0)
+                {
+                    hours = value;
+                }
+                else
+                {
+                    hours = 1;
+                }
+            }
+        }
+        public double HourlyRate
+
+        {
+            get => hourlyRate;
+
+            set
+            {
+                if (value > 0)
+
+                {
+                    hourlyRate = value;
+                }
+                else
+                {
+                    hourlyRate = 10.00;
+                }
+                   
+            }
+        }
+
+        //default constructor
+
+        public Job()
+        {
+            jobDesc = "mow yard";
+            hours = 1;
+            HourlyRate = 10.00;
+        }
+
+        //overloaded/parameterized constructor
+        public Job(string jobDesc)
+        {
+            this.jobDesc = jobDesc;
+            hours = 1;
+            HourlyRate = 10.00;
+        }
+
+        //overloaded/parameterized constructor
+        //the + is the overloaded operator
+        public Job(double hours, double hourlyRate, string jobDesc)
+        {
+            this.Hours = hours;
+            this.HourlyRate = hourlyRate;
+            this.JobDesc = jobDesc;
+            
+        }
+
+        //second overloaded/parameterized constructor that accepts all 3 parameters
+        public static Job operator+(Job a, Job b)
+        {
+            double finalHours = a.hours + b.hours;
+            double finalHourlyRate = (a.hourlyRate + b.hourlyRate) / 2;
+            string jobDescrip = a.JobDesc + "and" + b.JobDesc;
+
+            return  new Job(finalHours, finalHourlyRate, jobDescrip);
+            // ^^we are instantiating a new object here that is a combination of two jobs
+        }
+
+        //^^^this method will compare two objects 
+
+        public double CalcFee()
+        {
+            double total = hours * HourlyRate;
+            //double finalHourlyRate = (a.hourlyRate + b.hourlyRate) / 2;
+
+            return total;
+            //return finalHourlyRate;
+
+        }
+
+        //you must implement IComparable in order to use the sort feature
+        //contract that promises to use method at some point
+        int IComparable.CompareTo(Object other)
+        {
+            
+            Job listItem = (Job)other;
+
+            if (this.CalcFee() > listItem.CalcFee())
+            {
+                return 1;
+            }
+            else if (this.CalcFee() < listItem.CalcFee())
+            {
+                return -1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public override string ToString()
+        {
+            return "Description: " + this.JobDesc + "\n" +
+                   "charge per hour " + this.HourlyRate.ToString("$#.00") + "\n"+
+                   "Labor hours " + this.Hours + "\n" +
+                   "Total: " + CalcFee().ToString("$#.00");
+         
+        }
+    }
+}
+
+
+       
