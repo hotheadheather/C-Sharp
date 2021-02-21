@@ -1,0 +1,11 @@
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.csprojAssemblyReference.cache
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.DisplayStudents.resources
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.StudentGUI.resources
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.csproj.GenerateResource.cache
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.csproj.CoreCompileInputs.cache
+C:\C#\DataGrid\StudentScores\StudentScores\bin\Debug\StudentScores.exe.config
+C:\C#\DataGrid\StudentScores\StudentScores\bin\Debug\StudentScores.exe
+C:\C#\DataGrid\StudentScores\StudentScores\bin\Debug\StudentScores.pdb
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.exe
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.pdb
+C:\C#\DataGrid\StudentScores\StudentScores\obj\Debug\StudentScores.DataGrid.resources
